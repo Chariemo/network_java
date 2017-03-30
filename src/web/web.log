@@ -1,0 +1,42 @@
+www.baidu.com INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.37
+220.181.111.188 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 1 2016 10:01:52 UTC
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.37.0
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Deve\Java\Jre
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_102-b14
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Deve\Tomcat
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Deve\Tomcat
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Deve\Tomcat
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Deve\Tomcat
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=E:\Deve\Tomcat\endorsed
+19-Oct-2016 15:17:10.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Deve\Tomcat\temp
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Deve\Tomcat\conf\logging.properties
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+19-Oct-2016 15:17:10.049 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Deve\Tomcat\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;E:\Deve\MySQL\bin;C:\Android;C:\Windows\System32;;.
+19-Oct-2016 15:17:10.393 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Oct-2016 15:17:10.711 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Oct-2016 15:17:10.727 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2016 15:17:10.727 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Oct-2016 15:17:10.727 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1565 ms
+19-Oct-2016 15:17:10.789 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+19-Oct-2016 15:17:10.789 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.37
+19-Oct-2016 15:17:10.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Deve\Tomcat\webapps\docs
+19-Oct-2016 15:17:11.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Deve\Tomcat\webapps\docs has finished in 703 ms
+19-Oct-2016 15:17:11.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Deve\Tomcat\webapps\manager
+19-Oct-2016 15:17:11.602 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Deve\Tomcat\webapps\manager has finished in 78 ms
+19-Oct-2016 15:17:11.602 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Deve\Tomcat\webapps\ROOT
+19-Oct-2016 15:17:11.649 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Deve\Tomcat\webapps\ROOT has finished in 47 ms
+19-Oct-2016 15:17:11.664 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Oct-2016 15:17:11.680 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2016 15:17:11.696 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 959 ms
+19-Oct-2016 15:17:39.568 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Oct-2016 15:17:39.630 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2016 15:17:39.693 INFO [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+19-Oct-2016 15:17:39.724 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Oct-2016 15:17:39.724 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
