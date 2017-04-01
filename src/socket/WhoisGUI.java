@@ -210,15 +210,8 @@ public class WhoisGUI extends JFrame{
 				category = Whois.SearchFor.ASN;
 			}
 			
-			try {
-				names.setText("");
-				server.setHost(chosenServer.getText());
-				String result = server.lookUnNames(searchString.getText(), category, group, exactMatch.isSelected());
-				names.setText(result);
-			} catch (IOException exception) {
-				JOptionPane.showMessageDialog(WhoisGUI.this, exception.getMessage(),
-						"Lookup Failed", JOptionPane.ERROR_MESSAGE);
-			}
+			Thread connect = new Thread(new Connect(category, group));
+			connect.start();
 		}
 		
 	}
@@ -237,6 +230,35 @@ public class WhoisGUI extends JFrame{
 		}
 		
 	}
+	
+	private class Connect implements Runnable {
+		
+		private Whois.SearchFor category;
+		private Whois.SearchIn group;
+		
+		public Connect(Whois.SearchFor category, Whois.SearchIn group) {
+			// TODO Auto-generated constructor stub
+			this.category = category;
+			this.group = group;
+		}
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			try {
+				System.out.println("1");
+				names.setText("");
+				server.setHost(chosenServer.getText());
+				String result = server.lookUnNames(searchString.getText(), category, group, exactMatch.isSelected());
+				names.setText(result);
+				System.out.println("111");
+			} catch (IOException exception) {
+				JOptionPane.showMessageDialog(WhoisGUI.this, exception.getMessage(),
+						"Lookup Failed", JOptionPane.ERROR_MESSAGE);
+			}
+		}
+		
+	}
+	
 	
 	private static class FrameShower implements Runnable {
 		
