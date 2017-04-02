@@ -109,13 +109,12 @@ class OutputThread implements Runnable {
 	
 	@Override
 	public void run() {
-
 		String line;
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			while (true) {
 				line = bufferedReader.readLine();
-				if (line == null) {
+				if (line.equals(".")) {
 					break;
 				}
 				writer.write(line + "\r\n");
