@@ -1,0 +1,16 @@
+HTTP/1.5 200 OK
+Date: Sun Apr 02 23:34:09 CST 2017
+Server: JHTTP/1.0
+Content-length: 156
+Content-type: text/plain
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nothing just for testing SocketServer</title>
+</head>
+<body>
+<b>HEI</b>
+</body>
+</html>
