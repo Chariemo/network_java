@@ -12,12 +12,31 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.IllegalFormatCodePointException;
+
+import javax.sound.sampled.Port;
+
+import web.HostLookup;
 
 public class Client {
-
+	private static final String DEFAULT_HOST = "localhost";
+	private static final int DEFAULT_PORT = 80;
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		
-		Socket socket = new Socket("localhost", 80);
+		String host = DEFAULT_HOST;
+		int port = DEFAULT_PORT;
+		try {
+			if (args.length > 0) {
+				host = args[0];
+			}
+			if (args.length > 1) {
+				port = Integer.parseInt(args[1]);
+			}
+		} catch(IndexOutOfBoundsException exception) {
+			
+		}
+		
+		Socket socket = new Socket(host, port);
 		System.out.println("Connect " + socket.getInetAddress() + " finished");
 		
 		Thread readerThread = new Thread(new SocketReader(socket.getInputStream()));
