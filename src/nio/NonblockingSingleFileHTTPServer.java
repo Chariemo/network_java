@@ -61,7 +61,7 @@ public class NonblockingSingleFileHTTPServer {
 				try {
 					if (key.isAcceptable()) {
 						ServerSocketChannel serverSocketChannel2 = (ServerSocketChannel) key.channel();
-						SocketChannel socketChannel = serverSocketChannel.accept();
+						SocketChannel socketChannel = serverSocketChannel2.accept();
 						socketChannel.configureBlocking(false);
 						socketChannel.register(selector, SelectionKey.OP_READ);
 					}
