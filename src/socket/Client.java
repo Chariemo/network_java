@@ -12,15 +12,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.IllegalFormatCodePointException;
 
-import javax.sound.sampled.Port;
-
-import web.HostLookup;
 
 public class Client {
 	private static final String DEFAULT_HOST = "localhost";
-	private static final int DEFAULT_PORT = 80;
+	private static final int DEFAULT_PORT = 3456;
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		
 		String host = DEFAULT_HOST;
